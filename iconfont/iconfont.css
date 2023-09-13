@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4249798 */
+  src: url('iconfont.woff2?t=1694578381435') format('woff2'),
+       url('iconfont.woff?t=1694578381435') format('woff'),
+       url('iconfont.ttf?t=1694578381435') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-computer:before {
+  content: "\e6ad";
+}
+
+.icon-icon-test:before {
+  content: "\e633";
+}
+
+.icon-icon-test1:before {
+  content: "\e63b";
+}
+
+.icon-icon-test2:before {
+  content: "\e63c";
+}
+
+.icon-icon-test3:before {
+  content: "\e657";
+}
+
+.icon-icon-test4:before {
+  content: "\e658";
+}
+
+.icon-icon-test5:before {
+  content: "\e65d";
+}
+
+.icon-icon-test6:before {
+  content: "\e65e";
+}
+
+.icon-icon-test7:before {
+  content: "\e65f";
+}
+
+.icon-icon-test8:before {
+  content: "\e660";
+}
+
+.icon-headphones:before {
+  content: "\e730";
+}
+
+.icon-gaming:before {
+  content: "\e882";
+}
+
+.icon-arrow-right-circle:before {
+  content: "\e665";
+}
+
+.icon-arrow-left-circle:before {
+  content: "\e666";
+}
+
+.icon-camera:before {
+  content: "\e667";
+}
+
+.icon-mobile-phone:before {
+  content: "\e85c";
+}
+
