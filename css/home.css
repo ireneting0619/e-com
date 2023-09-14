@@ -1,13 +1,15 @@
 .menu{
     width: 217px;
     height: 344px;
+    margin-top: 40px;
+    border-right: 1px solid #D9DBE9;
 }
 
 .menu ul{
     display: flex;
     flex-direction: column;
     margin-right: 16px;
-    border-right: 1px solid #D9DBE9;
+    
     padding: 5px;
 }
 
@@ -19,8 +21,11 @@
 
 
 .main-area1{
+    width: 1170px;
+    margin: 0 auto;
     display: flex;
     margin-bottom: 140px;
+    border-top: 1px solid #D9DBE9;
 }
 
 
@@ -28,17 +33,16 @@
     position: relative;
     width: 892px;
     height: 344px;
+    margin-top: 40px;
 }
 
 .banner1 img{
-    width: 1020px;
+    width: 100%;
     margin-left: 45px;
     vertical-align: middle;
 
 }
-.banner1 li{
-    color: rgb(255, 255, 255);
-}
+
 .banner1 ol{
     display: flex;
     position: absolute;
@@ -46,7 +50,7 @@
     height: 14px;
     background-color: rgba(245, 235, 235, 0.3);
     left: 55%;
-    transform: translateY(310%);
+    transform: translateY(50%);
     border-radius: 10px;
 }
 
@@ -61,6 +65,333 @@
 
 .banner1 ol .red-dot{
     background-color: #E11D48;
+}
+
+/* today 紅色產品區塊 */
+.today{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+.title{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #DB4444;
+}
+
+.rbox{
+    margin-right: 16px;
+    width: 20px;
+    height: 40px;
+    background-color: #DB4444;
+    border-radius: 5px;
+}
+
+.subtitle{
+    display: flex;
+}
+
+.subtitle h2{
+    margin-right: 87px;
+    margin-top: 24px;
+}
+
+.subtitle .time{
+    margin-top: 13px;
+}
+
+.subtitle .number {
+    display: flex;
+    font-size: 32px;
+}
+
+.subtitle ul{
+    margin-right: 38px;
+}
+
+.count{
+    font-size: 12px;
+}
+
+.count-numb{
+   font-size: 32px;
+   font-weight: bold;
+}
+
+.number ol li{
+    width: 4px;
+    height: 4px;
+    margin: 8px;
+    background-color: #DB4444;
+    border-radius: 50%;
+}
+
+.count-numb{
+    display: flex;
+}
+
+.number ol{
+    margin-left: 17px;
+}
+
+.subtitle .icon{
+    margin-left: 400px;
+}
+
+.today-product{
+    width: 1308px;
+    display: flex;
+    overflow: hidden;
+}
+
+
+.img-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 250px;
+    background-color: #F5F5F5;
+    margin-right:30px;
+    padding: 12px 12px 0px 12px;
+}
+/* img 點擊放大 */
+.img-box{width:270px; height:250px;overflow:hidden;}
+.img-box img{transform:scale(1,1);transition: all 1s ease-out;}
+.img-box img:hover{transform:scale(1.2,1.2);}
+
+/* img 上的標籤 */
+.red-tag{
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    width: 55px;
+    height: 25px;
+    background-color: #DB4444;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    padding:5px 0;
+    font-weight: bold;
+}
+
+.box .icon{
+    position: absolute;
+    right: -14px;
+    top: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-icon-test3:hover,.icon-icon-test:hover{
+    transform: scale(1.2)
+}
+
+
+.box .icon a{
+    margin: 8px;
+}
+
+.icon-a-ThreeStar{
+    color: #FBBF24;
+}
+
+.star{
+    color: #a39b97;
+}
+.today-product{
+    margin-top: 40px;
+}
+
+.price-gray{
+    margin-left: 12px;
+    text-decoration: line-through;
+    color: #a39b97;
+}
+
+.price-red{
+    color: #DB4444;
+}
+
+.item-info{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+
+/* 加入購物車fade */
+/*base code*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+  /*the animation definition*/
+  @-webkit-keyframes fadeInUpBig {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0)
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none
+    }
+  }
+  @keyframes fadeInUpBig {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      -ms-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0)
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none
+    }
+  }
+  .fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig
+  }
+
+  #square{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    width: 270px;
+    height: 41px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #square:hover{
+    cursor: pointer;
+  }
+
+  /* view */
+.view{
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.view p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 234px;
+    height: 56px;
+    background-color: #DB4444;
+}
+
+.view a{
+    color: #ffffff;
+}
+
+.catagory{
+    border: 1px solid #D9DBE9;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.head h2{
+    font-size: 32px;
+}
+.head a{
+    font-size: 46px;
+}
+
+.item-box .iconfont{
+    font-size: 56px;
+}
+
+.item-box {
+    display: flex;
+ 
+}
+.item-box ul{
+   flex-direction: column;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 170px;
+   height: 145px;
+   border: 1px solid #D9DBE9;
+   margin-right: 30px;
+   margin-top: 60px;
+}
+
+.item-box li{
+    margin-bottom: 10px;
+}
+
+.item-box ul:last-child{
+    margin-right: 0;
+}
+.item-box ul:hover{
+    background-color: #DB4444;
+}
+
+.view-all a{
+    font-size: 16px;
+ 
+    color: #ffffff;
+}
+.view-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DB4444;
+    width: 159px;
+    height: 56px;
+}
+
+.banner2{
+    margin-top: 140px;
+    margin-bottom: 70px;
+}
+
+.row2{
+    display: flex;
+}
+
+.banner3.box{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner3{
+    display: flex;
 }
 
 
