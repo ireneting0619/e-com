@@ -1,5 +1,10 @@
+@media screen and (max-device-width: 768px){
+    body{
+      background:green;
+  }
+
 .wrap{
-    width: 1440px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -45,7 +50,7 @@
 
 /* header */
 
-.header{
+header{
     display: flex;
     justify-content: center;
     height: 38px;
@@ -105,7 +110,7 @@ input{
 
 /* footer */
 
-.footer{
+footer{
     height: 440px;
     background-color: black;
     color: #ffffff;
